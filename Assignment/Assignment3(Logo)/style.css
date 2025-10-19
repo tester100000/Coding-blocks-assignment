@@ -1,0 +1,38 @@
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #E8AE6E;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .logo {
+            width: 160px;
+            height: 160px;
+            position: relative;
+            --border-thickness: 40px;
+            border: var(--border-thickness) solid black;
+            border-top-right-radius: 56px;
+            border-bottom-left-radius: 56px;
+        }
+
+        .logo::before,
+        .logo::after {
+            content: '';
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background-color: #FFFFFF;
+        }
+
+        .logo::before {
+            top: -40px;
+            left: -40px;
+        }
+        
+        .logo::after {
+            bottom: -40px;
+            right: -40px;
+        }
